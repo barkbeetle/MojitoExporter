@@ -121,9 +121,9 @@ def printNode(node, indent, file):
 		ml = node.GetRelMl()
 		if firstLevelNode == True:
 			# make proper XYZ coordinate system
-			file.write("%s %s %s %s " % (-ml.v1.x, ml.v2.x, ml.v3.x, -ml.off.x))
+			file.write("%s %s %s %s " % (ml.v1.x, ml.v2.x, ml.v3.x, ml.off.x))
 			file.write("%s %s %s %s " % (ml.v1.y, ml.v2.y, ml.v3.y, ml.off.y))
-			file.write("%s %s %s %s " % (ml.v1.z, ml.v2.z, ml.v3.z, ml.off.z))
+			file.write("%s %s %s %s " % (ml.v1.z, ml.v2.z, -ml.v3.z, -ml.off.z))
 			file.write("%s %s %s %s" % (0.0, 0.0, 0.0, 1.0))
 		else:
 			file.write("%s %s %s %s " % (ml.v1.x, ml.v2.x, ml.v3.x, ml.off.x))
@@ -160,9 +160,9 @@ def printNode(node, indent, file):
 		ml = node.GetRelMl()
 		if firstLevelNode == True:
 			# make proper XYZ coordinate system
-			file.write("%s %s %s %s " % (-ml.v1.x, ml.v2.x, ml.v3.x, -ml.off.x))
+			file.write("%s %s %s %s " % (ml.v1.x, ml.v2.x, ml.v3.x, ml.off.x))
 			file.write("%s %s %s %s " % (ml.v1.y, ml.v2.y, ml.v3.y, ml.off.y))
-			file.write("%s %s %s %s " % (ml.v1.z, ml.v2.z, ml.v3.z, ml.off.z))
+			file.write("%s %s %s %s " % (ml.v1.z, ml.v2.z, -ml.v3.z, -ml.off.z))
 			file.write("%s %s %s %s" % (0.0, 0.0, 0.0, 1.0))
 		else:
 			file.write("%s %s %s %s " % (ml.v1.x, ml.v2.x, ml.v3.x, ml.off.x))
