@@ -11,8 +11,10 @@ import mojito.export
 pluginResource = c4d.plugins.GeResource()
 pluginResource.Init(pluginPath)
 
-pluginId = 123
+pluginId = 1027817
 pluginName = "Mojito (*.moj)"
 fileEnding = "moj"
 
-c4d.plugins.RegisterSceneSaverPlugin(pluginId, pluginName, mojito.export.MojitoExporter, c4d.PLUGINFLAG_SCENEFILTER_DIALOGCONTROL, "", fileEnding, pluginResource)
+if not c4d.plugins.RegisterSceneSaverPlugin(pluginId, pluginName, mojito.export.MojitoExporter, c4d.PLUGINFLAG_SCENEFILTER_DIALOGCONTROL, "", fileEnding, pluginResource):
+	print("MojitoExport could not be loaded!")
+
