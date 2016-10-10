@@ -1,9 +1,9 @@
 ##############################################
-#  						                     #
+#                                            #
 #    Mojito Exporter Plugin for Cinema 4D    #
-#    June 2011			                     #
-#    Sandro Ropelato		                 #
-#                                            #           
+#    June 2011                               #
+#    Sandro Ropelato                         #
+#                                            #
 ##############################################
 
 How to install?
